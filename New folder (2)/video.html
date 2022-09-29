@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Seorang Remaja Putus Cinta</title>
+    </head>
+    <body>
+        <h2>Remaja Yang Sedang Sad</h2>
+        <p>
+            <button type="button" onclick="playVid()">Play Video</button>
+            <button type="button" onclick="pauseVid()">Pause Video</button>
+            <button type="button" onclick="duration()">Duration</button>
+            <button type="button" onclick="controlOn()">Control ON</button>
+            <button type="button" onclick="controlOff()">Control OFF</button>
+        </p>
+        <video id="myVideo" width="480" height="240" controls>
+            <source src="sadvibes.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+          </video>
+    </body>
+    <script>
+    var vid = document.getElementById("myVideo");
+        function playVid() {
+         vid.play();
+         vid.load = true;
+       }
+        function pauseVid() {
+            vid.pause();
+            vid.load = true;
+        }
+        function duration() {
+            alert(vid.duration);
+            vid.load = true;
+        }
+        function controlOn() {
+           vid.controls = true;
+        }
+        function controlOff() {
+           vid.controls = false;
+        }
+
+    </script>
+</html>
