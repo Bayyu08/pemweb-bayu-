@@ -1,0 +1,66 @@
+body{
+    background: #e5e2dc;
+    font-family: sans-serif;
+    text-align: center;
+}
+h1{
+    color: rgb(0, 0, 0);
+}
+.ketengah{
+    margin: 10px auto;
+    width: 1150px;
+}
+    /*
+    nilai 20 adalah nilai tinggi rendah nya bayangan
+    nilai 10 adalah nilai untuk mengatur rata kiri kanan bayangan
+    nilai 5 adalah nilai untuk mengatur ketebalan bayangan
+    dan yang terakhir adalah mengatur warna bayangan
+    */
+.tulisan1{
+    color: white;
+    text-shadow: 2px 2px 4px #7300ff;
+}
+    /*text-shadow: 20px 10px 5px #232323;
+}
+    /*
+    nilai 0 pertama adalah nilai tinggi rendah nya bayangan
+    nilai 0 kedua adalah nilai untuk mengatur rata kiri kanan bayangan
+    nilai 20 adalah nilai untuk mengatur ketebalan bayangan
+    dan yang terakhir adalah mengatur warna bayangan
+    */
+.tulisan2{
+    color: coral;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+    /*text-shadow: 0px 0px 20px #232323;
+}
+    /*
+    nilai 20 yang pertama adalah nilai tinggi rendah nya bayangan
+    nilai 20 kedua adalah nilai untuk rata kiri kanan bayagan
+    nilai 40 adalah nilai radius banyangan
+    nilai 10 adalah nilai ketebalan bayangan
+    dan yang terakhir adalah menentukan warna bayangan
+    */
+.kotak1{
+    background: white;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    float: left;
+    box-shadow: 20px 20px 40px 10px red;
+}
+/*
+nilai 0 yang pertama adalah nilai tinggi rendah nya bayangan
+nilai 0 kedua adalah nilai untuk rata kiri kanan bayagan
+nilai 10 pertama adalah nilai radius banyangan
+nilai 10 kedua adalah nilai ketebalan bayangan
+dan yang terakhir adalah menentukan warna bayangan
+*/
+.kotak2{
+    background: white;
+    width: 300px;
+    margin: 20px;
+    float: left;
+    height: 300px;
+    box-shadow: 0px 0px 10px 10px #333333;
+}

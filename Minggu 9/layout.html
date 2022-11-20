@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Layout</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header {
+            border: 1px solid blue;
+            background-color: gray;
+            padding: 20px;
+        }
+        .row::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        [class*="col"]{
+            float: left;
+            padding: 15px;
+            border: 1px solid blue;
+        }
+        .col1{ width: 8,33%;}
+        .col2{ width: 16.66%;}
+        .col3{ width: 25%;}
+        .col4{ width: 33.33%;}
+        .col5{ width: 41.66%;}
+        .col6{ width: 50%;}
+        .col7{ width: 58.33%;}
+        .col8{ width: 66.66%;}
+        .col9{ width: 75%;}
+        .col10{ width: 83.33%;}
+        .col11{ width: 91.66%;}
+        .col12{ width: 100%;}
+        footer{
+            text-align: center;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Judul Halaman / Header</h2>
+    </header>
+    <main class="row">
+        <nav class="col3">
+            <ul>
+                <li>Menu 1</li>
+                <li>Menu 2</li>
+            </ul>
+        </nav>
+        <article class="col9">
+            <h4>Judul Isi</h4>
+            <p>Lorem ipsum do site color Lorem ipsum do site color Lorem ipsum do site color Lorem ipsum do site color Lorem ipsum do site color.</p>
+            <p>Lorem ipsum do site color Lorem ipsum do site color Lorem ipsum do site color Lorem ipsum do site color Lorem ipsum do site color.</p>
+            <div class="col6">Lorem ipsum do site color Lorem ipsum do site color Lorem ipsum do site color Lorem ipsum do site color Lorem ipsum do site color.</div>
+            <div class="col6">Lorem ipsum do site color Lorem ipsum do site color Lorem ipsum do site color Lorem ipsum do site color Lorem ipsum do site color.</div>
+        </article>
+        </main>
+        <footer class="col12">
+            copyright <i>&copy;</i>pbw 2022
+        </footer>
+</body>
+</html>

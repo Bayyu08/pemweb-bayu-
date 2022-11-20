@@ -1,0 +1,66 @@
+body{
+    background: #d0dfcf;
+    font-family: roboto;
+    text-align: center;
+}
+h1,h2{
+    color: rgb(0, 0, 0);
+}
+.ketengah{
+    margin: 10px auto;
+    width: 1150px;
+}
+.kotak1{
+    background: #e07070;
+    padding: 20px;
+    float: left;
+    margin: 50px;
+    width: 150px;
+    height: 150px;
+}
+.kotak2{
+    background: #90b41ac0;
+    padding: 20px;
+    float: left;
+    margin: 50px;
+    width: 150px;
+    height: 150px;
+    /*-ms-transform: skew(20deg); /* Support IE 9 */
+    /*-webkit-transform: skew(20deg); /* support Safari */
+    /*transform: skew(20deg); /* Standard syntax */
+    transform: skew(20deg, 10deg);
+}
+.kotak3{
+    background: #5b5a7f;
+    padding: 20px;
+    float: left;
+    margin: 50px;
+    width: 150px;
+    height: 150px;
+    -ms-transform: skew(30deg,20deg); /* Support IE 9 */
+    -webkit-transform: skew(30deg,20deg); /* support Safari */
+    transform: skew(30deg,20deg); /* Standard syntax */
+}
+.kotak4{
+    background: #728ea5;
+    padding: 20px;
+    float: left;
+    margin: 50px;
+    width: 150px;
+    height: 150px;
+    -ms-transform: skewY(20deg); /* Support IE 9 */
+    -webkit-transform: skewY(20deg); /* support Safari */
+    transform: skewY(45deg); /* Standard syntax */
+}
+.kotak5{
+    background: #d16bb6;
+    padding: 20px;
+    float: left;
+    margin: 50px;
+    width: 150px;
+    height: 150px;
+    /*-ms-transform: skewX(20deg); /* Support IE 9 */
+    /*-webkit-transform: skewX(20deg); /* support Safari */
+    /*transform: skewX(20deg); /* Standard syntax */
+    transform: skew(30deg);
+}

@@ -1,0 +1,55 @@
+body{
+    background: #ffb300;
+    font-family: roboto;
+    text-align: center;
+}
+h1{
+    color: #fff;
+}
+.ketengah{
+    margin: 10px auto;
+    width: 1150px;
+}
+.kotak{
+    background: #fcfcfc;
+    padding: 20px;
+    width: 200px;
+    float: left;
+    margin: 20px;
+    height: 200px;
+}
+.kotak1{
+    border-radius: 25px 20px 20px 150px;
+    border: 5px dashed green;
+}
+.kotak2{
+    border-radius: 40px 20px 60px 90px;
+    border: 10px double rgb(70, 188, 172);
+}
+.kotak3{
+    border-radius: 2px 140px 20px 60px;
+    border: 10px ridge rgb(190, 51, 51);
+}
+.kotak4{
+    border-radius: 20px 10px 80px 10px;
+    border: 10px outset rgb(154, 48, 122);
+}
+.kotak5{
+    border-radius: 0px 50px 0px 50px;
+    border: 10px solid rgb(215, 215, 51);
+}
+.kotak6{
+    border-radius: 0px 0px 0px 0px;
+    border-top: 10px solid rgb(30, 213, 88);
+    border-bottom: 10px solid rgb(212, 145, 10);
+    border-left: 10px solid rgb(85, 121, 194);
+    border-right: 10px solid rgb(186, 98, 185);
+    }
+.kotak7{
+    border-radius: 100%;
+    border: 10px dotted brown;
+}
+.kotak8{
+    border-radius: 40px 10px;
+    border: 10px groove rgb(124, 134, 150);
+}
