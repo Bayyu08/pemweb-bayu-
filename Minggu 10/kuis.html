@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Kasus Javascript</title>
+  </head>
+  <body>
+    <h1>Kuis Javascript</h1>
+    <form name="formHitung">
+      bil 1 <input type="number" name="a" /> <br />
+      opr
+      <select name="opr">
+        <option>+</option>
+        <option>-</option>
+        <option>*</option>
+        <option>/</option></select
+      ><br />
+      bil 2 <input type="number" name="b" />
+      <input type="button" value="=" id="equal" />
+      <input type="number" name="hasil" id="hasil" disabled />
+    </form>
+    <script>
+      document.getElementById("equal").onclick = () => {
+        let formHitung = document.formHitung;
+        let a = formHitung.a.value;
+        let opr = formHitung.opr.value;
+        let b = formHitung.b.value;
+
+        let z;
+        switch (opr) {
+          case "+":
+            z = parseInt(a) + parseInt(b);
+            break;
+          case "-":
+            z = parseInt(a) - parseInt(b);
+            break;
+          case "*":
+            z = parseInt(a) * parseInt(b);
+            break;
+          case "/":
+            z = parseInt(a) / parseInt(b);
+            break;
+        }
+
+        formHitung.hasil.value = z;
+        // formHitung.hasil.value = eval(a + opr + b);
+      };
+    </script>
+  </body>
+</html>
