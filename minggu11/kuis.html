@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kuis</title>
+</head>
+<body>
+    <h2>Data Mahasiswa PBW 2022</h2>
+    <form method="POST" action="javascript:void(0);" onsubmit="apl.Add()">
+        <input type="text" placeholder="Input Nama MHS" id="tambahNama">
+        <input type="submit" value="+">
+    </form>
+    <div id="counter">
+        <!-- data dinamis dari js -->
+    </div>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>Daftar Nama</td>
+            </tr>
+        </thead>
+        <tbody id="mhs">
+            <!-- data dinamis dari js -->
+        </tbody>
+    </table>
+    <script>
+        var apl = new function() {
+            this.el  = document.getElementById("mhs");
+            
+            this.mhs = ["Ahmad Rayhan","Muhammad Rukhyan","Zaenal Rojali"];
+
+                this.barisAll = function() {
+                    var data = "";
+
+                    if (this.mhs.length > 0) {
+                        for (i = 0; i < this.mhs.length;i++) {
+                            data += "<tr>";
+                            data += "<td>" + this.mhs[i] + "</td";
+                            data += "</tr>";
+                        }
+                    }
+                    return this.el.innerHTML = data;
+                }
+                this.Add = function() {
+                    //untuk fungsi Add (on submit)
+                }
+                this.Count = function() {
+                    var el = document.getElementById ("counter");
+                    if (data) {
+                        el.innerHTML = data + " " + "Mahasiswa";
+                    }else {
+                        el.innerHTML = "No" + "Mahasiswa"
+                    }
+                }
+        }
+        apl.barisAll();
+    </script>
+</body>
+</html>
