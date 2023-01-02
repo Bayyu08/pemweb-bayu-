@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Pemesanan</title>
+      <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="js/script.js"></script>
+
+   </head>
+<body>
+
+   <section class="header">
+
+      <a href="index.html" class="logo">travelIn.</a>
+
+      <nav class="navbar">
+         <a href="index.html">home</a>
+         <a href="about.html">tentang kami</a>
+         <a href="package.html">paket</a>
+         <a href="book.html">pemesanan</a>
+      </nav>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+   </section>
+
+   <div class="heading" style="background:url(images/header-bg-3.png) no-repeat">
+      <h1>pesan sekarang</h1>
+   </div>
+
+   <section class="booking">
+
+      <h1 class="heading-title">pesan paket anda</h1>
+
+      <form action="book.html" method="post" class="book-form" id="form_id">
+
+         <div class="flex">
+            <div class="inputBox">
+               <span>nama :</span>
+               <input type="text" placeholder="masukkan nama" name="name" id="name">
+            </div>
+            <div class="inputBox">
+               <span>email :</span>
+               <input type="email" placeholder="masukkan email" name="email" id="email">
+            </div>
+            <div class="inputBox">
+               <span>nomor hp :</span>
+               <input type="number" placeholder="masukkan nomor hp" name="phone" id="phone">
+            </div>
+            <div class="inputBox">
+               <span>alamat :</span>
+               <input type="text" placeholder="masukkan alamat" name="address" id="address">
+            </div>
+            <div class="inputBox">
+               <span>destinasi wisata :</span>
+               <select class="form-select" aria-label="Default select example" name="destination" id="destination">
+                  <option selected>Pilih destinasi wisata:</option>
+                  <option value="1">Wakatobi</option>
+                  <option value="2">Pulau Komodo</option>
+                  <option value="3">Raja Ampat</option>
+                  <option value="4">Bali</option>
+                  <option value="5">Taman Laut Bunaken</option>
+                  <option value="6">Malioboro</option>
+                  <option value="7">Candi Borobudur</option>
+                  <option value="8">Curug Luweng Sampang</option>
+                  <option value="9">Kepulauan Anambas Riau</option>
+                  <option value="10">Dieng Plateau</option>
+                  <option value="11">Gunung Bromo</option>
+                  <option value="12">Danau Sentani</option>
+               </select>
+            </div>
+            <div class="inputBox">
+               <span>jumlah orang:</span>
+               <input type="number" placeholder="masukkan jumlah orang" name="guests" id="guests">
+            </div>
+            <div class="inputBox">
+               <span>kedatangan :</span>
+               <input type="date" name="arrivals" id="arrivals">
+            </div>
+            <div class="inputBox">
+               <span>Kepergian :</span>
+               <input type="date" name="leaving" id="leaving">
+            </div>
+         </div>
+
+         <input type="submit" value="submit" class="btn" name="send" onclick="submitpesanan()">
+
+      </form>
+
+   </section>
+
+   <section class="footer">
+
+      <div class="box-container">
+
+         <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html"> <i class="fas fa-angle-right"></i> home</a>
+            <a href="about.html"> <i class="fas fa-angle-right"></i> tentang kami</a>
+            <a href="package.html"> <i class="fas fa-angle-right"></i> paket</a>
+            <a href="book.html"> <i class="fas fa-angle-right"></i> pemesanan</a>
+         </div>
+
+         <div class="box">
+            <h3>contact info</h3>
+            <a href="https://wa.me/081511715422"> <i class="fas fa-phone"></i> 081511715422 </a>
+            <a href="mailto:bayuutriiatmoko@gmail.com"> <i class="fas fa-envelope"></i> bayuutriiatmoko@gmail.com </a>
+            <a href="https://www.google.co.id/maps/place/Kota+Semarang,+Jawa+Tengah/@-7.0133219,110.3927848,17z/data=!4m5!3m4!1s0x2e708b4d3f0d024d:0x1e0432b9da5cb9f2!8m2!3d-7.0051453!4d110.4381254"> <i class="fas fa-map"></i> Semarang, Indonesia </a>
+         </div>
+
+         <div class="box">
+            <h3>follow me</h3>
+            <a href="https://twitter.com/Threeact_08"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="https://www.instagram.com/bythre_/"> <i class="fab fa-instagram"></i> instagram </a>
+         </div>
+
+      </div>
+
+      <div class="credit"> created by <span>Bayu Triatmoko</span> | all rights reserved! </div>
+
+   </section>
+
+</body>
+</html>
